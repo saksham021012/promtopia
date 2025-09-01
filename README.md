@@ -57,7 +57,6 @@ NEXTAUTH_URL_INTERNAL= http://localhost:3000
 NEXTAUTH_SECRET=your-secret-key
 MONGODB_URI=your-mongodb-connection-uri
 ```
-
 ### Installation
 ```bash
 npm install
