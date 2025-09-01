@@ -63,6 +63,3 @@ MONGODB_URI=your-mongodb-connection-uri
 npm install
 npm run dev
 ```
-
-Promtopia was inspired by the idea of building a **community-driven AI prompt library**,  
-making it easier for users to share and discover creative AI use cases.
