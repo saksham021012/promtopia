@@ -1,7 +1,7 @@
 # Promtopia 🧠✨
 
 Promtopia is a **smart AI prompt–sharing application** built with **Next.js** and **Tailwind CSS**.  
-Think of it like a blog app — but instead of blog posts, users create and share **AI prompts**.  
+Think of it like a blog app, but instead of blog posts, users create and share **AI prompts**.  
 Other users can browse, copy, and use these prompts for their own AI experiments.
 
 ---
