@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Promtopia 🧠✨
 
-## Getting Started
+Promtopia is a **smart AI prompt–sharing application** built with **Next.js** and **Tailwind CSS**.  
+Think of it like a blog app, but instead of blog posts, users create and share **AI prompts**.  
+Other users can browse, copy, and use these prompts for their own AI experiments.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+- 🔐 **Google Authentication** with [NextAuth.js](https://next-auth.js.org/)  
+- 📝 **Create, edit, and delete AI prompts**  
+- 🌍 **Share prompts publicly** for others to explore and use    
+- 🎨 **Modern UI** styled with Tailwind CSS    
+
+---
+
+## 🛠️ Tech Stack
+- [Next.js (App Router)](https://nextjs.org/docs) – React framework  
+- [NextAuth.js](https://next-auth.js.org/) – Authentication (Google OAuth)  
+- [Tailwind CSS](https://tailwindcss.com/) – Styling  
+- [MongoDB](https://www.mongodb.com/) – Database for storing prompts & users   
+
+---
+
+## 📂 Project Structure
+```
+├── app/               # Next.js App Router (pages, layouts, API routes)
+├── components/        # Reusable UI components
+├── model/             # Data models (e.g., Prompt schema)
+├── utils/             # Helper functions
+├── styles/            # Global styles & Tailwind config
+├── public/assets/     # Static images and assets
+├── next.config.mjs
+├── tailwind.config.js
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+- Node.js v16+  
+- npm / yarn / pnpm  
+- MongoDB connection string  
+- Google OAuth credentials (for NextAuth)
 
-## Learn More
+### Environment Variables
+Create a `.env.local` file in the project root and add:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+GOOGLE_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL_INTERNAL= http://localhost:3000
+NEXTAUTH_SECRET=your-secret-key
+MONGODB_URI=your-mongodb-connection-uri
+```
+### Installation
+```bash
+npm install
+npm run dev
+```
