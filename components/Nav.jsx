@@ -39,7 +39,7 @@ const Nav = () => {
               Create Post
             </Link>
 
-            <button type='button' onClick={signOut} className='outline_btn'>
+            <button type='button' onClick={signOut} className='outline_btn cursor-pointer'>
               Sign Out
             </button>
 
@@ -96,7 +96,7 @@ const Nav = () => {
                 </Link>
                 <Link
                   href='/create-prompt'
-                  className='dropdown_link'
+                  className='dropdown_link cursor-pointer'
                   onClick={() => setToggleDropdown(false)}
                 >
                   Create Prompt
@@ -124,7 +124,7 @@ const Nav = () => {
                   onClick={() => {
                     signIn(provider.id);
                   }}
-                  className='black_btn'
+                  className='black_btn cursor-pointer'
                 >
                   Sign in
                 </button>
